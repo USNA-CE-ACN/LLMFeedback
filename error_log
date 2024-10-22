@@ -1,0 +1,715 @@
+[21-Aug-2024 19:50:40 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'llm'@'localhost' (using password: YES) in /home3/smkkyxmy/public_html/config.php:6
+Stack trace:
+#0 /home3/smkkyxmy/public_html/config.php(6): mysqli->__construct('localhost', 'llm', Object(SensitiveParameterValue), 'llmfeedback')
+#1 /home3/smkkyxmy/public_html/login.php(4): include('/home3/smkkyxmy...')
+#2 {main}
+  thrown in /home3/smkkyxmy/public_html/config.php on line 6
+[21-Aug-2024 20:55:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 20:55:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 21:14:10 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 21:14:10 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/login.php:6) in /home3/smkkyxmy/public_html/login.php on line 28
+[21-Aug-2024 21:14:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 21:14:16 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/login.php:6) in /home3/smkkyxmy/public_html/login.php on line 28
+[21-Aug-2024 21:14:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 21:15:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/login.php on line 11
+[21-Aug-2024 21:18:25 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/login.php:19) in /home3/smkkyxmy/public_html/login.php on line 22
+[21-Aug-2024 22:00:41 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/student_login.php:18) in /home3/smkkyxmy/public_html/student_login.php on line 20
+[22-Aug-2024 06:52:08 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home3/smkkyxmy/public_html/create_checkpoint.php:18
+Stack trace:
+#0 /home3/smkkyxmy/public_html/create_checkpoint.php(18): mysqli->prepare('INSERT INTO Che...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/create_checkpoint.php on line 18
+[22-Aug-2024 07:05:19 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/student_login.php:18) in /home3/smkkyxmy/public_html/student_login.php on line 20
+[22-Aug-2024 20:16:13 America/Boise] PHP Warning:  Undefined variable $alpha in /home3/smkkyxmy/public_html/question.php on line 123
+[26-Aug-2024 14:08:40 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home3/smkkyxmy/public_html/create_checkpoint.php:18
+Stack trace:
+#0 /home3/smkkyxmy/public_html/create_checkpoint.php(18): mysqli->prepare('INSERT INTO Che...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/create_checkpoint.php on line 18
+[26-Aug-2024 14:08:54 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home3/smkkyxmy/public_html/create_checkpoint.php:18
+Stack trace:
+#0 /home3/smkkyxmy/public_html/create_checkpoint.php(18): mysqli->prepare('INSERT INTO Che...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/create_checkpoint.php on line 18
+[10-Sep-2024 08:45:33 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /home3/smkkyxmy/public_html/create_checkpoint.php:18
+Stack trace:
+#0 /home3/smkkyxmy/public_html/create_checkpoint.php(18): mysqli->prepare('INSERT INTO Che...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/create_checkpoint.php on line 18
+[10-Sep-2024 09:15:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:15:34 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:34:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:34:35 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:35:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:35:41 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:37:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:37:49 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:38:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:38:26 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:38:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:38:54 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:38:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:38:56 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 09:39:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 09:39:01 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 10:10:58 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 10:10:58 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 10:11:13 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 10:11:13 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 10:12:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 10:12:00 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 10:29:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[10-Sep-2024 10:29:16 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[10-Sep-2024 12:55:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 12:55:47 America/Boise] PHP Deprecated:  html_entity_decode(): Passing null to parameter #2 ($flags) of type int is deprecated in /home3/smkkyxmy/public_html/question.php on line 11
+[10-Sep-2024 12:55:47 America/Boise] PHP Deprecated:  html_entity_decode(): Passing null to parameter #2 ($flags) of type int is deprecated in /home3/smkkyxmy/public_html/question.php on line 11
+[10-Sep-2024 12:55:47 America/Boise] PHP Deprecated:  html_entity_decode(): Passing null to parameter #2 ($flags) of type int is deprecated in /home3/smkkyxmy/public_html/question.php on line 11
+[10-Sep-2024 12:55:47 America/Boise] PHP Deprecated:  html_entity_decode(): Passing null to parameter #2 ($flags) of type int is deprecated in /home3/smkkyxmy/public_html/question.php on line 11
+[10-Sep-2024 12:55:47 America/Boise] PHP Deprecated:  html_entity_decode(): Passing null to parameter #2 ($flags) of type int is deprecated in /home3/smkkyxmy/public_html/question.php on line 11
+[10-Sep-2024 12:57:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 12:57:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 12:57:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 13:00:38 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 13:33:07 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home3/smkkyxmy/public_html/save.php on line 35
+[10-Sep-2024 13:35:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 13:35:58 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 13:54:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Sep-2024 15:45:48 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 08:00:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 08:02:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 08:05:17 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 22
+[11-Sep-2024 08:05:39 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 22
+[11-Sep-2024 08:06:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 08:06:28 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 22
+[11-Sep-2024 08:07:43 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 08:13:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:22
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 22
+[11-Sep-2024 16:29:32 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 17:21:28 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:28
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 28
+[11-Sep-2024 17:22:47 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysqli_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:28
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 28
+[11-Sep-2024 17:23:19 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli::mysql_real_escape_string() in /home3/smkkyxmy/public_html/check_llm_answer.php:34
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 34
+[11-Sep-2024 17:23:46 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'smkkyxmy_llmfeedback.Priming' doesn't exist in /home3/smkkyxmy/public_html/check_llm_answer.php:45
+Stack trace:
+#0 /home3/smkkyxmy/public_html/check_llm_answer.php(45): mysqli->query('SELECT priming_...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/check_llm_answer.php on line 45
+[11-Sep-2024 17:25:38 America/Boise] PHP Warning:  require_once(/home3/smkkyxmy/public_html/vendor/composer/autoload_real.php): Failed to open stream: No such file or directory in /home3/smkkyxmy/public_html/vendor/autoload.php on line 23
+[11-Sep-2024 17:25:38 America/Boise] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/smkkyxmy/public_html/vendor/composer/autoload_real.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home3/smkkyxmy/public_html/vendor/autoload.php:23
+Stack trace:
+#0 /home3/smkkyxmy/public_html/check_llm_answer.php(77): require_once()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/vendor/autoload.php on line 23
+[11-Sep-2024 19:28:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:28:27 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:31:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:31:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:33:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:37:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:37:00 America/Boise] PHP Warning:  Undefined global variable $_SESSION in /home3/smkkyxmy/public_html/question.php on line 129
+[11-Sep-2024 19:43:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:44:04 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:44:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:45:41 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:45:47 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:45:53 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:45:55 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:45:59 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:46:08 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_llm_answer.php:7) in /home3/smkkyxmy/public_html/check_llm_answer.php on line 30
+[11-Sep-2024 19:46:37 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_llm_answer.php:7) in /home3/smkkyxmy/public_html/check_llm_answer.php on line 30
+[11-Sep-2024 19:46:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:50:21 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:50:24 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/check_text_answer.php:7) in /home3/smkkyxmy/public_html/check_text_answer.php on line 22
+[11-Sep-2024 19:53:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 19:53:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 20:10:33 America/Boise] PHP Warning:  Undefined variable $checkpoint__q_total in /home3/smkkyxmy/public_html/load_progress.php on line 106
+[11-Sep-2024 20:10:33 America/Boise] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home3/smkkyxmy/public_html/load_progress.php:106
+Stack trace:
+#0 {main}
+  thrown in /home3/smkkyxmy/public_html/load_progress.php on line 106
+[11-Sep-2024 20:30:23 America/Boise] PHP Warning:  Undefined variable $response in /home3/smkkyxmy/public_html/view_attempts.php on line 40
+[11-Sep-2024 20:30:23 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[11-Sep-2024 20:31:55 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[11-Sep-2024 20:32:51 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 20:35:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[11-Sep-2024 20:35:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:26:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:27:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:27:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:56:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:56:13 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:56:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:57:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:58:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 07:59:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:00:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:01:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:01:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:01:53 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:02:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:02:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:03:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:04:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:05:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:06:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:32 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:07:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:08:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:09:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:10:10 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:10:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:11:13 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:12:17 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:12:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:12:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:15:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:15:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:16:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:16:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:17:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:17:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:17:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:18:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:18:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:18:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:19:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:19:43 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 08:20:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:20:03 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 08:20:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:20:58 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:21:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:22:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:23:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:24:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:33:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:33:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:35:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:35:17 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:35:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:35:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:36:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:36:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:38:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:39:50 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 08:41:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:42:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:42:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:42:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:45:36 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:45:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:46:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:46:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:46:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:46:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:47:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:49:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:51:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:51:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:51:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:52:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:52:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:52:43 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:52:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:53:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:53:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:54:38 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:54:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:55:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:55:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:57:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:57:38 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 08:58:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:58:32 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:59:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:59:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 08:59:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:00:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:01:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:01:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:02:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:02:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:03:13 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:03:43 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 09:04:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:04:44 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:05:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:05:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:05:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:06:04 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:08:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:08:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:09:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:10:38 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:13:17 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:13:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:13:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:14:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:15:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:16:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:16:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:16:44 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:17:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:21:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:22:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:23:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:23:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:25:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:25:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:28:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:29:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:30:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:30:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:31:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:32:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:32:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:33:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:33:19 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 09:33:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:33:35 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 09:33:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:33:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:34:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 09:36:17 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 10:22:03 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:22:05 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:22:05 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:22:06 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:42 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:43 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:51 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:52 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:53 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:23:56 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:16 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:17 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:18 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:27 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:27 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:24:28 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:25:26 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:27:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 10:43:38 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:43:39 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:43:39 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:43:40 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:43:41 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:45:56 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:45:57 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:45:59 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:45:59 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:00 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:27 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:28 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:29 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:30 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 10:46:31 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[12-Sep-2024 15:19:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[12-Sep-2024 15:55:39 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in /home3/smkkyxmy/public_html/admin.php:178
+Stack trace:
+#0 /home3/smkkyxmy/public_html/admin.php(178): mysqli->query('SELECT * from C...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/admin.php on line 178
+[12-Sep-2024 15:56:31 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in /home3/smkkyxmy/public_html/admin.php:178
+Stack trace:
+#0 /home3/smkkyxmy/public_html/admin.php(178): mysqli->query('SELECT * from C...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/admin.php on line 178
+[12-Sep-2024 15:56:34 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in /home3/smkkyxmy/public_html/admin.php:178
+Stack trace:
+#0 /home3/smkkyxmy/public_html/admin.php(178): mysqli->query('SELECT * from C...')
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/admin.php on line 178
+[12-Sep-2024 19:52:13 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[13-Sep-2024 09:31:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[13-Sep-2024 15:00:07 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[13-Sep-2024 15:00:07 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[13-Sep-2024 16:40:53 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[13-Sep-2024 19:31:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[13-Sep-2024 21:42:46 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[13-Sep-2024 21:42:46 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[13-Sep-2024 22:23:06 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[13-Sep-2024 22:23:06 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[13-Sep-2024 22:23:06 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[13-Sep-2024 22:23:06 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[13-Sep-2024 23:36:27 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[13-Sep-2024 23:36:27 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[13-Sep-2024 23:36:27 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 00:10:45 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 00:10:45 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 01:13:08 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[14-Sep-2024 03:43:41 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:43:41 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 03:43:55 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:43:55 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 03:44:18 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:44:18 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 03:44:18 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:44:18 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 03:47:54 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:47:54 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 03:47:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[14-Sep-2024 03:53:44 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 03:53:44 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:25:19 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:25:19 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:27:36 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:27:36 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:32:26 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:32:26 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:35:17 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:35:17 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:36:24 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:36:24 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:43:08 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:43:08 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:46:28 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:46:28 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:47:23 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:47:23 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:47:35 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:47:35 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:47:48 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:47:48 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:47:50 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:47:50 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:49:42 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:49:42 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:50:53 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:50:53 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:54:57 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:54:57 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 05:55:40 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 05:55:40 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 06:05:03 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 06:05:03 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 06:26:57 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/view_attempts.php:7) in /home3/smkkyxmy/public_html/session.php on line 6
+[14-Sep-2024 06:28:30 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 06:28:30 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 06:30:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[14-Sep-2024 06:56:54 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 06:56:54 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 07:26:44 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 07:26:44 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 07:42:28 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 07:42:28 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 07:43:32 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 07:43:32 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 07:49:02 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 07:49:02 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 07:49:24 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 07:49:24 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 10:41:06 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 10:41:06 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 11:43:07 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[14-Sep-2024 11:43:07 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[14-Sep-2024 11:56:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[14-Sep-2024 11:56:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Sep-2024 11:08:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Sep-2024 14:14:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Sep-2024 17:20:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[16-Sep-2024 15:43:55 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:43:55 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:43:55 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:43:56 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:43:57 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:09 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:13 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:19 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:31 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:35 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:39 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:53 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:53 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:54 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Sep-2024 15:45:54 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[18-Sep-2024 06:45:38 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[19-Sep-2024 07:59:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[22-Sep-2024 01:07:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[22-Sep-2024 01:12:16 America/Boise] PHP Warning:  Undefined array key "answer_given" in /home3/smkkyxmy/public_html/check_text_answer.php on line 18
+[22-Sep-2024 01:12:16 America/Boise] PHP Warning:  Undefined array key "alpha" in /home3/smkkyxmy/public_html/check_text_answer.php on line 19
+[22-Sep-2024 08:01:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[25-Sep-2024 20:41:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[25-Sep-2024 20:41:21 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_checkpoint.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[25-Sep-2024 20:52:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[25-Sep-2024 20:59:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[25-Sep-2024 21:00:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[25-Sep-2024 21:01:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:29 America/Boise] PHP Warning:  Undefined array key "guid" in /home3/smkkyxmy/public_html/question.php on line 113
+[26-Sep-2024 09:04:29 America/Boise] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home3/smkkyxmy/public_html/question.php on line 113
+[26-Sep-2024 09:04:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:43 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:04:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:17 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:18 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:27 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:05:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:06:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:06:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:06:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:06:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:07:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:07:18 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[26-Sep-2024 09:14:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[01-Oct-2024 19:17:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 19:17:57 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 19:26:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 19:26:09 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:00:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:00:55 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:04:36 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:04:36 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:05:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:05:02 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:05:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:05:03 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:05:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:05:22 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:05:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:05:25 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:08:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:08:19 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:08:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:08:24 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[01-Oct-2024 20:08:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[01-Oct-2024 20:08:30 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[02-Oct-2024 16:21:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[02-Oct-2024 16:21:01 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[02-Oct-2024 18:38:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[02-Oct-2024 18:38:39 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[06-Oct-2024 17:59:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[06-Oct-2024 17:59:42 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[06-Oct-2024 18:00:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[06-Oct-2024 18:00:24 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[06-Oct-2024 18:00:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/session.php on line 3
+[06-Oct-2024 18:00:25 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/smkkyxmy/public_html/create_assignment.php:6) in /home3/smkkyxmy/public_html/session.php on line 6
+[08-Oct-2024 07:45:37 America/Boise] PHP Warning:  Undefined array key "assignment" in /home3/smkkyxmy/public_html/create_assignment.php on line 20
+[08-Oct-2024 09:07:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[09-Oct-2024 21:57:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[09-Oct-2024 21:58:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[09-Oct-2024 22:03:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 07:58:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 07:59:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 07:59:13 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:00:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:00:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:00:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:00:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:01:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:02:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:02:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:02:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:04:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:04:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:05:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:06:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:06:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:06:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:06:58 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:08:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:09:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:09:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:10:32 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:10:43 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:11:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:11:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:12:24 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[10-Oct-2024 08:12:47 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[10-Oct-2024 08:13:53 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:16:04 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:16:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:17:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:18:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:21:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:21:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:22:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:23:10 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:23:51 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:23:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:25:09 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:26:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:28:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:28:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:29:10 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:30:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:31:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:32:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:32:08 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:32:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:32:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:33:01 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[10-Oct-2024 08:44:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 09:47:09 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '200000' for key 'PRIMARY' in /home3/smkkyxmy/public_html/update_enrollment.php:41
+Stack trace:
+#0 /home3/smkkyxmy/public_html/update_enrollment.php(41): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/update_enrollment.php on line 41
+[15-Oct-2024 10:06:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 10:11:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:07 America/Boise] PHP Warning:  foreach() argument must be of type array|object, null given in /home3/smkkyxmy/public_html/save.php on line 18
+[15-Oct-2024 11:19:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:22 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:35 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:19:48 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:31:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:32:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:32:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:33:30 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:35:40 America/Boise] PHP Warning:  Undefined array key 2 in /home3/smkkyxmy/public_html/update_enrollment.php on line 36
+[15-Oct-2024 11:35:40 America/Boise] PHP Warning:  Undefined array key 1 in /home3/smkkyxmy/public_html/update_enrollment.php on line 36
+[15-Oct-2024 11:35:40 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home3/smkkyxmy/public_html/update_enrollment.php:41
+Stack trace:
+#0 /home3/smkkyxmy/public_html/update_enrollment.php(41): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/update_enrollment.php on line 41
+[15-Oct-2024 11:35:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:36:21 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '200000' for key 'PRIMARY' in /home3/smkkyxmy/public_html/update_enrollment.php:41
+Stack trace:
+#0 /home3/smkkyxmy/public_html/update_enrollment.php(41): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/update_enrollment.php on line 41
+[15-Oct-2024 11:36:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:36:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:37:10 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:38:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:38:35 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[15-Oct-2024 11:38:53 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:40:08 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:40:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:41:19 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:41:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:42:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:42:44 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:42:53 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:42:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:43:27 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:44:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:44:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:44:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:44:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:45:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:46:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:46:45 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:47:12 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:47:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:47:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:48:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:48:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:50:25 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:50:29 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:50:34 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:50:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:50:56 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:51:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:52:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:52:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:53:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:55:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:57:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 11:59:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 12:22:14 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[15-Oct-2024 12:52:54 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[16-Oct-2024 06:22:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[16-Oct-2024 06:22:37 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[16-Oct-2024 06:22:40 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[16-Oct-2024 19:08:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:18:49 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:18:50 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:18:51 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:18:57 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:18:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:20:08 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:20:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:21:03 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:23:47 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:23:52 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:23:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:23:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:23:59 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:00 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:02 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:07 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:24:24 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:26:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:28:06 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:28:41 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:30:38 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[17-Oct-2024 09:31:19 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[17-Oct-2024 09:34:52 America/Boise] PHP Warning:  Undefined variable $question_str in /home3/smkkyxmy/public_html/view_attempts.php on line 49
+[17-Oct-2024 15:35:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[18-Oct-2024 09:30:44 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[18-Oct-2024 11:10:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 12:57:55 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '200000' for key 'PRIMARY' in /home3/smkkyxmy/public_html/update_enrollment.php:41
+Stack trace:
+#0 /home3/smkkyxmy/public_html/update_enrollment.php(41): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/update_enrollment.php on line 41
+[21-Oct-2024 13:40:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 13:40:54 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 13:40:55 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 13:54:39 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 13:55:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 13:56:33 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 14:02:18 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:36:21 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:36:31 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:41:24 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '200000' for key 'PRIMARY' in /home3/smkkyxmy/public_html/update_enrollment.php:41
+Stack trace:
+#0 /home3/smkkyxmy/public_html/update_enrollment.php(41): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home3/smkkyxmy/public_html/update_enrollment.php on line 41
+[21-Oct-2024 18:42:15 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:43:43 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:44:28 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 18:44:42 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 19:44:16 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8
+[21-Oct-2024 19:44:26 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/smkkyxmy/public_html/question.php on line 8

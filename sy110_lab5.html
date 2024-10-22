@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+    <!-- The above 3 meta tags *must* come first in the head;
+         any other head content must come *after* these tags -->
+
+    <!-- Icon to use on the browser bar -->
+    <link rel="icon" href="calendar/images/web-icon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="calendar/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="calendar/Skeleton/css/normalize.css">
+    <link rel="stylesheet" href="calendar/Skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="calendar/css/skeleton-modifications.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="calendar/bootstrap3-ie10-viewport-bug-workaround/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='calendar/fonts/raleway.css' rel='stylesheet' type='text/css'>
+
+    <!-- Ace Code Editor - https://ace.c9.io/ -->
+    <script type="text/javascript"
+      src="calendar/ace-builds/src-noconflict/ace.js" charset="utf-8">
+    </script>
+
+    <!-- Chart.js - http://www.chartjs.org -->
+    <script type="text/javascript"
+      src="calendar/chartjs/Chart.bundle.min.js" charset="utf-8">
+    </script>
+
+    <!-- To support challenge/response authentication within course notes-->
+        <script type="text/javascript">
+      var nonce = "5a33f6d3927bc95f3fb197f6f625b736c64c3af2e4649335e38a8fccd4aba24e";
+    </script>
+    <script type="text/javascript" src="calendar/js/sha256.js"></script>
+    
+    <!-- Styles for the submission System -->
+    <link href="calendar/css/calendar-default.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" src="calendar/MathJax-3.3.2/tex-chtml-full.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="calendar/highlight/styles/color-brewer.min.css">
+    <script src='calendar/highlight/highlight.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="calendar/Font-Awesome/css/font-awesome.min.css">
+
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="calendar/datatables.net/datatables.min.css"/>
+
+    <!-- Printing -->
+    <link rel="stylesheet" type="text/css" media="print" href="calendar/css/calendar-print.css" />
+
+    <!-- Custom CSS based on user preferences -->
+    <link href='docs/sy110_cdrD.css' rel='stylesheet'>
+
+
+    <!-- Custom JavaScript based on user preferences -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="calendar/jquery/js/jquery-3.6.3.min.js"></script>
+    <script src="calendar/bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="calendar/bootstrap3-ie10-viewport-bug-workaround/ie10-viewport-bug-workaround.js"></script>
+    <!-- DataTables -->
+    <script type="text/javascript" src="calendar/datatables.net/datatables.min.js"></script>
+
+  <title>SY110 Lab 5</title>
+
+  </head>
+  <body>
+
+  <!-- End TopBar and CSS Stuff! -->
+<!-- Begin providing the contents of the page -->
+<div class="container">
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>SY110- Lab</TITLE>
+    <!-- Begin providing the contents of the page -->
+    <script>
+          var crsNum = "SY110";
+          var ygYY = "28";
+          var servFQDN = "ssh.cyber.usna.edu";
+          var servSHORT = "ssh";
+    </script>
+    <style>
+      /*REMOVE BORDERS FOR TABLES*/
+      table, tr, td {
+        border: none;
+      }
+
+      /*CONSOLE DISPLAY*/
+      .console {
+        width: 600px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 12px;
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+      .consoleFont {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      pre {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 1em 0;
+      }
+      .prompt {
+        font-family: monospace, "Courier New";
+      }
+
+      /*TYPEWRITER FEATURE*/
+      .type-wrapper {
+        height: 18px;
+        /*This part is important for centering*/
+        display: grid;
+        place-items: left;
+      }
+
+      .typewriter {
+        width: 29ch;
+        animation: typing 2s steps(28), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 14px;
+      }
+
+      @keyframes typing {
+        from {
+        width: 0
+        }
+      }
+
+      @keyframes blink {
+        50% {
+        border-color: transparent
+        }
+      }
+    </style>
+  </HEAD>
+
+  <BODY>
+  <div class="container">
+
+    <span id="top"></span>
+    <div class="noScreen">
+      <h1>Network Traffic Analysis</h1>
+    </div>
+
+    <div class="learnObjs">
+      <h2>Learning Outcomes</h2>
+      <p>
+      After completing these activities you should be able to:
+      </p>
+      <ul>
+        <li>Access the VDE</li>
+        <li>Access the Wireshark application</li>
+        <li>Utilize network tools to evaluate the VDE configuration</li>
+        <li>Capture and observe network traffic using ARP and UDP</li>
+        <li>Capture and observe unsecure and secure network traffic using TCP</li>
+        <li>Assess TCP/IP stack information using packet analysis</li>
+      </ul>
+    </div>
+
+    <br>
+    
+    <br>
+
+    <div id="shell_cmd">
+      <h3>Access the Virtual Desktop Environment (VDE)</h3>
+      <p>
+       Log into vSphere and access the Virtual Machines (VMs).
+
+    
+       <ul>
+           <li>Connect to https://vcenter.cyber.usna.edu/ and click on the Launch vSphere Client button.</li>
+           <li>The login screen will require the academy domain credentials. </li>
+           <li>Username is m+alpha@academy.usna.edu</li>
+           <li>Enter your network password.</li>
+           <li>Check "I agree to DoD policy on system use"</li>
+           <li>Click on the LOGIN button.</li>
+       </ul>
+       
+       <img src="images/vmware1.png"></img>
+       
+       <p>Expand the virtual Datacenter to show systems available and select the Windows VM as shown below.</p>
+       
+       <img src="images/select_windows.png"></img>
+       
+       <p>If the VM is powered off (see example below), click the green arrow next to the name of the virtual machine to send the Power On signal.</p>
+       
+       <p>Select Launch Web Console for the Guest OS.</p>
+       
+       <img src="images/launch_console.png"></img>
+       
+       <p>A new browser tab will open for the Windows VM.</p>
+       
+       <p>Use the default credentials BlueGold24 to login as sy110usr. You may need to select this user from the lower left-hand side of the login screen.</p>
+           
+       <p>You may adjust the display resolution by right-clicking on the desktop and select Display Settings.</p>
+       
+       <p>Click on Windows Start, type Wireshark, and launch the program.</p>
+       
+       <img src="images/wireshark_prog.png"></img>
+       
+       <p>As the Wireshark initializes, observe network traffic that's generated on each of the interfaces by looking at the packet stream graph:</p>
+       
+       <img src="images/traffic.png"></img>
+       
+       <p>Make a note of which network interface, other than loopback, is generating observable traffic.  In the Virtual Machine, open a command prompt and use the network utility tool, <b>ipconfig /all</b>, to display the network configuration and document the following:</p>
+       
+       <ul>
+           <li>MAC Address</li>
+           <li>IPv4 Address</li>
+           <li>Default Gateway</li>
+           <li>DNS Server</li>
+       </ul>
+       
+       <p>This part of the lab is designed to reintroduce you to the VDE by remotely accessing the Windows VM. The steps outlined should have successfully verified your VM's operational state and familiarization with its network configuration.</p>
+       
+       <h3>WireShark Familiarization</h3>
+       
+       <p>The WireShark program should be running from the previous series of questions.  WireShark provides a basic visual display on packets observed on the interface. Double-click on the interface displaying network traffic (not the loopback).</p>
+       
+       <p>The network interface stream will open with the window breakdown as follows:</p>
+       
+        <img src="images/wireshark_overview.png"></img>
+        
+        <p>Add a filter to view ARP frames and view announcements and view the frame details. Type <i>arp</i> in the filter bar at the top of Wireshark and hit enter. If the filter expression is valid, it will show as green; if it is invalid, it will be red (the filter will show as red as you type, but should turn to green once you complete your valid filter).</p>
+        
+        <p>Within the VM, open a browser and navigate to the message board http://sy110.cyber.usna.edu/msg/delozier/msg/mb.html</p>
+        
+        <p>The IP address of the sy110.cyber.usna.edu server is <b>192.168.0.2</b>.</p>
+        
+        <p>Within a Windows Shell, conduct a DNS query for sy110.cyber.usna.edu by using the <b>nslookup</b> network utility.</p>
+        
+        <ul>
+            <li>Enter the filter udp.port==53 in WireShark and observe the information provided. Look for a Standard query 0x0001 in the Info column and select that packet.<</li>
+            <li>Keep one of these packets highlighted while you answer the checkpoint questions for this section of the lab.</li>
+        </ul>
+
+    <a href="https://www.ece-labs.net/question.php?guid=509dcea">Complete the Wireshark Familiarization checkpoint!</a>
+      
+    <h3>Capturing Web Traffic</h3>
+    
+    <p>In the VM, login to the message board. Create a new account if you are not able to recall previous accounts and passwords. <b>Do not use a real password!</b></p>
+    
+    <p>Once successfully authenticated, return to the WireShark app and scroll to the bottom to view the latest network traffic. Note: Change the filter to <b>http</b> to view web traffic.</p>
+    
+    <p>Make note of the application layer data in the HTTP GET request and identify the name-value pair sent as part of teh request.  Were you able to view the information in plain text?</p>
+    
+    <p>Close the browser tab for the message board, and reopen it as https instead of using http: https://sy110.cyber.usna.edu/msg/delozier/msg/mb.html</p>
+    
+    <p>When asked, you can proceed by using the Show Advanced button and clicking through the link as shown below.  (We're using fake certificates that the browser doesn't like.)</p>
+    
+    <img src="images/proceed.png"></img>
+    
+    <p>Update the WireShark filter rule to tcp.port==443 && ip.addr==192.168.0.2</p>
+    
+    <p>Login to the message board and return to WireShark to observe its output.</p>
+    
+    <a href="https://www.ece-labs.net/question.php?guid=d010c51d">Complete the HTTP and HTTPS Checkpoint to finish the lab!</a>
+      
+    </div>
+  </BODY>
+</HTML>>
+</div> <!-- /container --></body></html><script id="f5_cspm">(function(){var f5_cspm={f5_p:'DFCIDBEKAHNJBKDFPPMCPMMCIOCNGCEOBGBBHIELAPIEBHKBPCFBHOCMICDHMEPLIMGBNPKLBKDPAJELCLOAHJDIALMOOBNNGNLNKDHAFAGGHACJJEBOGFEADOGPCGOC',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr2054311753aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

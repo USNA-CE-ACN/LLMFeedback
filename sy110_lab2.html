@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+    <!-- The above 3 meta tags *must* come first in the head;
+         any other head content must come *after* these tags -->
+
+    <!-- Icon to use on the browser bar -->
+    <link rel="icon" href="calendar/images/web-icon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="calendar/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="calendar/Skeleton/css/normalize.css">
+    <link rel="stylesheet" href="calendar/Skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="calendar/css/skeleton-modifications.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="calendar/bootstrap3-ie10-viewport-bug-workaround/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='calendar/fonts/raleway.css' rel='stylesheet' type='text/css'>
+
+    <!-- Ace Code Editor - https://ace.c9.io/ -->
+    <script type="text/javascript"
+      src="calendar/ace-builds/src-noconflict/ace.js" charset="utf-8">
+    </script>
+
+    <!-- Chart.js - http://www.chartjs.org -->
+    <script type="text/javascript"
+      src="calendar/chartjs/Chart.bundle.min.js" charset="utf-8">
+    </script>
+
+    <!-- To support challenge/response authentication within course notes-->
+        <script type="text/javascript">
+      var nonce = "5a33f6d3927bc95f3fb197f6f625b736c64c3af2e4649335e38a8fccd4aba24e";
+    </script>
+    <script type="text/javascript" src="calendar/js/sha256.js"></script>
+    
+    <!-- Styles for the submission System -->
+    <link href="calendar/css/calendar-default.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" src="calendar/MathJax-3.3.2/tex-chtml-full.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="calendar/highlight/styles/color-brewer.min.css">
+    <script src='calendar/highlight/highlight.min.js'></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="calendar/Font-Awesome/css/font-awesome.min.css">
+
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="calendar/datatables.net/datatables.min.css"/>
+
+    <!-- Printing -->
+    <link rel="stylesheet" type="text/css" media="print" href="calendar/css/calendar-print.css" />
+
+    <!-- Custom CSS based on user preferences -->
+    <link href='docs/sy110_cdrD.css' rel='stylesheet'>
+
+
+    <!-- Custom JavaScript based on user preferences -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="calendar/jquery/js/jquery-3.6.3.min.js"></script>
+    <script src="calendar/bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="calendar/bootstrap3-ie10-viewport-bug-workaround/ie10-viewport-bug-workaround.js"></script>
+    <!-- DataTables -->
+    <script type="text/javascript" src="calendar/datatables.net/datatables.min.js"></script>
+
+  <title>SY110 Lab 2</title>
+
+  </head>
+  <body>
+
+  <!-- End TopBar and CSS Stuff! -->
+<!-- Begin providing the contents of the page -->
+<div class="container">
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <TITLE>SY110- Lab</TITLE>
+    <!-- Begin providing the contents of the page -->
+    <script>
+          var crsNum = "SY110";
+          var ygYY = "28";
+          var servFQDN = "ssh.cyber.usna.edu";
+          var servSHORT = "ssh";
+    </script>
+    <style>
+      /*REMOVE BORDERS FOR TABLES*/
+      table, tr, td {
+        border: none;
+      }
+
+      /*CONSOLE DISPLAY*/
+      .console {
+        width: 600px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 12px;
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+      .consoleFont {
+        font-family: "Lucida Console", "Courier New", monospace;
+      }
+      pre {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 1em 0;
+      }
+      .prompt {
+        font-family: monospace, "Courier New";
+      }
+
+      /*TYPEWRITER FEATURE*/
+      .type-wrapper {
+        height: 18px;
+        /*This part is important for centering*/
+        display: grid;
+        place-items: left;
+      }
+
+      .typewriter {
+        width: 29ch;
+        animation: typing 2s steps(28), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 14px;
+      }
+
+      @keyframes typing {
+        from {
+        width: 0
+        }
+      }
+
+      @keyframes blink {
+        50% {
+        border-color: transparent
+        }
+      }
+    </style>
+  </HEAD>
+
+  <BODY>
+  <div class="container">
+
+    <span id="top"></span>
+    <div class="noScreen">
+      <h1>Linux and Windows Operating Systems Lab Prep</h1>
+    </div>
+
+    <div class="learnObjs">
+      <h2>Learning Outcomes</h2>
+      <p>
+      After completing these activities you should be able to:
+      </p>
+      <ul>
+      <li>Access basic features within the Windows Graphical User Interface (GUI)</li>
+      <li>Access the Windows PowerShell application</li>
+      <li>Distinguish terminology used for accessing applications, options, and functions within the console</li>
+      <li>Perform shell commands on a local system to accomplish common file system tasks</li>
+      <li>Perform shell commands on a remote system to accomplish common file system tasks</li>
+      <li>Lookup basic shell command help features within Windows and Linux command lines</li>
+      </ul>
+    </div>
+
+    <br>
+    
+    <br>
+
+    <H2>Lab Prep</H2>
+
+
+
+    <div id="shell_cmd">
+      <h3>Shell Commands</h3>
+      <p>
+        Navigating the file system within a terminal is an important skill to develop because a <DFN id="GUI">Graphical User Interface</DFN> (GUI) isn't always available due to constraints. Below is a list of common commands used within the Linux and Windows shells you'll be working with for this lab:
+        <table class="RM">
+          <tr>
+          <td><b>Windows</b></td>
+          <td><b>Linux</b></td>
+          <td><b>Summary</b></td>
+          <td><b>Ex (Windows)</b></td>
+          <td><b>Ex (Linux)</b></td>
+            </tr>
+            <tr>
+          <td class="prompt">dir</td>
+          <td class="prompt">ls</td>
+          <td>list contents of current directory</td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> dir</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> ls</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">cd</td>
+          <td class="prompt">pwd</td>
+          <td>display current directory</td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> cd</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> pwd</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">cd <em>path</em></td>
+          <td class="prompt">cd <em>path</em></td>
+          <td>change current directory</td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> cd \Users\m159999</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> cd /home/m159999</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">copy <em>path1</em> <em>path2</em></td>
+          <td class="prompt">cp <em>path1</em> <em>path2</em></td>
+          <td>copy file <em>path1</em> to name/location <em>path2</em></td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> copy foo.txt bar.txt</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> cp foo.txt bar.txt</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">move <em>path</em> <em>path</em></td>
+          <td class="prompt">mv <em>path</em> <em>path</em></td>
+          <td>move file <em>path1</em> to name/location <em>path2</em></td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> move foo.txt ..\backup\</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> mv foo.txt ../backup/</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">del <em>path</em></td>
+          <td class="prompt">rm <em>path</em></td>
+          <td>delete file <em>path</em></td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> del foo.txt</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> rm foo.txt</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">rmdir <em>path</em></td>
+          <td class="prompt">rmdir <em>path</em></td>
+          <td>delete folder/directory <em>path</em></td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> rmdir images</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> rmdir images</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">mkdir <em>path</em></td>
+          <td class="prompt">mkdir <em>path</em></td>
+          <td>create folder/directory <em>path</em></td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> mkdir images</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> mkdir images</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">type <em>path</em></td>
+          <td class="prompt">cat <em>path</em></td>
+          <td>print file <em>path</em> to screen</td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> type index.html</code>
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> cat index.html</code>
+          </td>
+            </tr>
+            <tr>
+          <td class="prompt">Notepad <em>path</em></td>
+          <td class="prompt">
+            gedit <em>path</em><br>
+            nano <em>path</em>
+          </td>
+          <td>Open file <em>path</em> in a text editor<br>
+            (<code style="font-size: 0.8em">nano</code> doesn't require
+            the GUI)
+          </td>
+          <td>
+            <code style="font-size: 0.8em"><b>C:&gt;</b> Notepad foo.txt</code><br>&nbsp;
+            </td><td>
+            <code style="font-size: 0.8em"><b>$</b> gedit foo.txt</code><br>
+            <code style="font-size: 0.8em"><b>$</b> nano foo.txt</code>
+          </td>
+            </tr>
+
+            <tr>
+          <td class="prompt">whoami</td>
+          <td class="prompt">whoami</td>
+          <td>Tells the username for the account that is executing the
+          command.</td>
+          <td><code style="font-size: 0.8em"><b>C:&gt;</b> whoami</code></td>
+          <td><code style="font-size: 0.8em"><b>$</b> whoami</code></td>
+          </tr>
+        </table>
+      </p>
+    </div>
+
+    <div id="terminal_shortcuts">
+      <h3>Terminal Shortcut Keys</h3>
+      <p>
+        As you gain familiarity with using the terminal/shell, expect to make mistakes. The system will not always provide output but pay attention when it does. The list below provides a quick reference to common keyboard shortcuts that will help commands and functions within the command line:
+        <TABLE style="border-spacing: 0; cellspacing: 0; border-collapse: collapse; padding: 0; margin: 0;">
+          <TR>
+            <TH style="text-align:center" width="150">Linux Bash</TH>
+            <TH style="text-align:center" width="250">Key Shortcut</TH>
+            <TH style="text-align:center" width="150">Windows Powershell</TH>
+          </TR>
+          <TR>
+            <TD style="text-align:center" width="150"><CODE>↑</CODE></TD>
+            <TD style="text-align:center" width="150">Previous Command (History)</TD>
+            <TD style="text-align:center" width="150"><CODE>↑</CODE></TD>
+          </TR>
+          <TR>
+            <TD style="text-align:center" width="150"><CODE>Tab</CODE></TD>
+            <TD style="text-align:center" width="150">file path auto complete</TD>
+            <TD style="text-align:center" width="150"><CODE>Tab</CODE></TD>
+          </TR>
+        </TABLE>
+      </p>
+    </div>
+
+    <div id="windows_os">
+      <h3>Microsoft Windows</h3>
+      <h4>Part 1</h4>
+      <p>Navigating the File System. The Command Line Interface (CLI) may also be referred to as a terminal or console but it is a shell that accesses the Operating System (OS). Working with the shell can be intimidating but know that system adminstrators do not memorize all of the commands available and often refers to the help features within the CLI to conduct specific actions. This inital task will begin your familiarization with the shell and navigating through the file system.</p>
+
+    <p>Click on Windows Start and type powershell; Select Windows PowerShell to open the application; A new window will appear with the application name in the upper left corner displaying Windows PowerShell. Note the prompt in the CLI as this is your home directory.</p>
+
+    <p>The prompt will display your current directory and because you just accessed the CLI, the default directory will be your home directory. This next part will demonstrate several commands that will allow you to display the contents of a directory as well as traversing through the parent and child directories, up and down throughout the file hierarchy.</p>
+
+    <p>The root directory for all Windows OS's will be C:\. Absolute file paths always begin with C:\, which can be used anywhere in the entire file system.</p>
+    <p></p>From your home directory, display the contents for C:\Windows\Fonts by using the dir command. The proper syntax that would be entered in the CLI is <b>dir C:\Windows\Fonts</b>, where dir is the command and C:\Windows\Fonts is the argument.</p>
+    <p>This folder contains all of the fonts available on your system.
+    Even though you are in your home directory, you were able to display the contents of the Fonts folder because you used the absolute file path.
+    To change directories, simply use the <b>cd</b> command with the same path as you used in the previous step.</p>
+    <p>Once you enter the command in CLI, your prompt should reflect your new location. Enter the dir command without any arguments to display the contents of the folder.</p>
+    <p>When using .. as an argument for the dir command, it specifies your parent directory and . will indicate your current directory. 
+    Let's try this by typing dir . followed by dir .. to look at the contents of the current and parent folders, respectively.</p>
+
+    <p>Another shortcut to return to your home directory is ~\. Try using this by typing cd ~\ and observing the changes to your current directory.  You should be back in your home directory of C:\Users\m289999. So far, you've navigated though the Windows file system using the CLI commands of dir and cd. An understanding of absolute and relative file paths should have also been applied. Next, we're going to look more into understanding commands within the shell.
+      </p>
+      
+      <a href="https://ece-labs.net/question.php?guid=09156189">Complete Windows Checkpoint 1 before moving on!</a>
+      
+      <h4>Part 2</h4>
+
+      <p>From the PowerShell CLI, you have the ability to execute programs just like you would in the Graphical User Interface (GUI). The help command may be useful in learning the command syntax, usage, and options available. In Windows, the help command can be accessed by the Get-Help command in PowerShell or -? option after a command. Let's look more into accessing help features and the CLI.</p>
+
+      <p>Open the old command prompt by typing cmd into your Windows search bar and hitting the Enter key. Note that you are still in your home directory but PS is no longer in the prompt.
+    Type help in the CLI and observe the commands available in command prompt.
+    Type exit to get out of command prompt and return to PowerShell. The prompt will begin with PS to indicate you are back in the PowerShell application.</p>
+
+    <p>Next, we'll use help to learn about another command.  We'll take a look at the <b>echo</b> command. This command is useful for sending information to the screen.</p>
+
+    <p>Enter the command <b>echo -?</b> or <b>Get-Help echo</b> to observe details about the echo command.  NAME displays the powershell name for this command.  SYNTAX shows you how to use the command in powershell syntax.  ALIAS shows commands that can be used in place of the powershell version of this command (e.g. they're interchangable).</p>
+    
+    <p>Try using the command <b>echo "Don't give up the ship!"</b>.</p>
+    
+    <p>Commands like echo can be combined with additional commands via piping to perform useful functions such as writing text to a file or measuring properties of text. Enter the command <b>echo "Don't Give Up the Ship!" | Measure-Object -Word</b> and observe the output.
+    Note that the output of echo was piped to the Measure-Object cmdlet with the -Word option used, resulting in the word count displayed.
+    Learn more about the Measure-Object cmdlet by invoking the Get-Help command.</p>
+    
+     <h4>Part 3</h4>
+     
+     <p>Even though you may regulary access the same local computer at home, you'll likely have to access numerous systems remotely using various methods, such as web, shell, Virtual Private Networks (VPNs), and more. Knowing what system you're on is very useful because remote and virtual access to systems makes it indistinguishable from one system to another. Unique identifiers based on hostnames and user accounts will provide situational awareness of what system you're working on.</p>
+
+    <p>Use the <b>hostname</b> command to display the name of your computer.</p>
+    
+    <p>Use the <b>whoami</b> command to display the user logged into the system
+    You may also see who else may be accessing your computer by running the command <b>query user</b> to display users logged in to the system.
+    Use the <b>systeminfo</b> command to display system information details.</p>
+    
+    <p>Use the <b>tasklist</b> command to observe the running processes on your computer.  Screoll to the top of the list to observe the values that are shown in each column.</p>
+    <p>Now run <b>tasklist | Measure-Object -Line</b> to determine the number of processes running on your computer.</p>
+    <p>Let's narrow this down to a smaller subset of processes.  Find many Chrome or Firefox processes you are running by entering <b>tasklist | findstr "chrome.exe"</b> or <b>tasklist | findstr "firefox.exe"</b>.
+    <p>View the number local accounts on your system by typing Get-LocalUser</p>
+    <p>Accessing system information in the shell can also be done in the Graphical User Interface (GUI).</p>
+    
+    <a href="https://ece-labs.net/question.php?guid=22553344">Complete Windows Checkpoint 2 before moving on!</a>
+    
+    <h4>Part 4</h4>
+    
+    <p>A handful of commands will allow you to create, modify, move, and delete files off of your system. This task will demonstrate the use of common commands that will enable you to manipulate the file system using the CLI.</p>
+
+    <p>Type <b>cd ~\Documents</b> to change your current working directory to the Documents folder.</p>
+    <p>Create a new folder called SY110 with a subdirectory of Labs by typing mkdir SY110\Labs.  Use the cd command to enter the Labs directory.  (Just cd by itself won't work.  You'll need to add a path as an <i>argument</i> to the command.</p>
+    <p>Create a file called USNA_Mission.txt using the <b>new-item</b> command.  If you're not sure how to use the command, use the help system to figure it out!  List the directory contents to ensure both files are there.</p>
+    
+    <p>Proceed to enter the Naval Academy Mission Statement into the USNA_Mission.txt file using the echo command: <b>echo "To develop Midshipmen morally, mentally and physically and to imbue them with the highest ideals of duty, honor and loyalty in order to graduate leaders who are dedicated to a career of naval service and have potential for future development in mind and character to assume the highest responsibilities of command, citizenship and government." >> USNA_Mission.txt</b>.  You can copy and paste this into your terminal by highlighting it in the browser, using Ctrl + c to copy it, and then right clicking on the powershell window to paste the copied command.</p>
+   
+    <p>Use the <b>type</b> command to read the file output of USNA_Mission.txt to screen to ensure the information was processed.</p>
+    
+    <p>Use the Measure-Object cmdlet to determine the number of characters contained within the USNA_Mission.txt file.</p>
+    
+    <p>Now use the copy command to duplicate the USNA_Mission.txt file into a new file called USNA_Mission1.txt: copy USNA_Mission.txt USNA_Mission1.txt</p>
+    
+    <p>Use the move command to relocate USNA_Mission1.txt to the parent folder and enter what you typed into the console. Check the SY110 folder to see if USNA_Mission1.txt is there and provide the absolute path of the file.</p>
+    
+    <p>Change your current working directory to the SY110 folder and rename USNA_Mission1.txt to mission.txt. Use the type command to display the contents of mission.txt by typing type mission.txt into the console.</p>
+    
+    <p>We no longer need the mission.txt file and it can be removed. Type <b>del mission.txt</b> to delete the file.
+    Verify the mission.txt file no longer exists by displaying the contents of the SY110 folder.</p>
+    
+    <h4>Part 5</h4>
+    
+    <p>The Windows Remote Desktop Protocol (RDP) is heavily used in the industry to access the GUI of another remote system. The access method covered in thes lab primarily focused on the Windows OSs shell, which is highly efficient for remote access connections. Bandwith needed for an SSH connection would be approximately 1,200 bits per second (bps) or the baud rate, which includes transmission and reception of any ASCII characters and overhead needed to secure the remote connection. Combining your knowledge of numeric systems in computing and remotely accessing another Windows GUI, let's look into the bandwidth requirements to appreciate the differences in managing systems architectures.</p>
+    
+    <p>As you work through this problem, record your answers for the upcoming checkpoint question.</p>
+
+    <p>When looking into television or monitor screens, it's often advertised as 720p, 1080p, 4k, or even 8k. Let's take a look into what your screen is configured for.</p>
+    <p>Click on Windows Start and type settings.</p>
+    <p>Open the Settings app and under the System menu select Display.
+    On the right, look at the Display Resolution to see what your monitor is configured for.</p>
+    <p>If your screen was set to 1920x1080, then your screen was set for 1080p - but wait...that's also considered 2k! 1920, or 2k resolution, sounds much better than 1080. The 'p' in 1080p stands for progressive instead of 1080i, or interlaced, which is the scan method used to update pixels across the screen but we're not going to get into that here. So we went from conveying the height of a screen resolution to the width, of which 4k is actually 3840x2160 pixels.</p>
+    <p>Now calculate how many pixels are present with a screen resolution of 1920x1080. (simply multiply the two numbers)</p>
+    
+    <p>Each pixel represents a single dot or color that is measured in hex, with the color white being #FFFFFF and black being #000000. Think of all of the bits being turned on for white color (F) and all of the bits off for the absence of light, or black (0). Note that # just represents the values are of a hexidecimal color.</p>
+    
+    <p>Each hex digit represents 4 bits (e.g. 0xF = 1111).  So, 6 hex digits represents 24 bits or 3 bytes.</p>
+    
+    <p>How much data (in bytes) are contained within a 1920x1080 image?</p>
+    
+    <p>With a screen refresh rate of 30Hz, or 30 frames per second (FPS), how much bandwith (in bytes) is required to display a 2k image for one second?  Each frame refresh draws every pixel on the screen.</p>
+   
+   <p>Notice in the Computer Architecture lesson, a Hard Drive Disk (HDD) stores information in bytes. Network connections and data rates are measured in bits per second (bps). The bit-byte differences in storage and transmission rates are not recognizable by typical consumers. Just take a look at a any of the cellular data plans and see if they're measured in bits or bytes.</p>
+   
+   <a href="https://www.ece-labs.net/question.php?guid=fff8222a">Complete Windows Checkpoint 3 before moving on!</a>
+    
+    </div>
+
+    <div id="linux_os">
+      <h3>Linux</h3>
+      <p>
+      Feel free to use the <a href="calendar.php?key=3a50af6a3f71ddff08be91e84d7f272573dbc4b1&type=resources&event=1">Windows/Unix Dictionary</a> found on the official SY110 course resources page to assist you with this part of the lab.
+      </p>
+      
+      <h4>Part 1</h4>
+      
+      <p>SSH is a popular application that is used to connect to remote systems by implementing cryptographic protocols. It provides for confidentiality and authenticaion, unlike other insecure protocols like File Transfer Protofol (FTP), Trivial File Transfer Protocol (TFTP), and telnet. This task will guide you through the use of SSH on your Windows OS, the host system, in order to establish a secured connection to a Linux OS, the remote system.</p>
+
+    <p>Click on Windows Start and type powershell to open a console. The syntax of the ssh command only requires one argument, but it's a long one.  The argument to ssh combines your username and the server that you are connecting to.  Use the command <b>ssh m289999@ssh.cyber.usna.edu</b> where m289999 is replaced with your own alpha.  When prompted, enter your usual password.  **Characters will not appear as you are typing**</p>
+    
+    <p>Confirm the name of the system you are interacting with by using the <b>hostname</b> command.</p>
+
+    <p>The SSH syntax will carry over to any OS you may be using and this course will be leveraging the ssh command to connect to various remote systems. This task introduced steps to remotely access another system using ssh and the information needed to login using your academy credentials.</p>
+    
+    <h4>Part 2</h4>
+      
+      <p>Documentation in Linux is very detailed with man pages, or manuals, available for just about every single command in the shell. Of course, you still have the various options of --help and -h. The help menu may also appear when an expected argument is missing ot the syntax is incorrect. The following tasks will build on your understanding of how users can increse their knowledge of programs by reviewing man pages and referencing help options.</p>
+
+    <p>Still remotely accessed into ssh.cyber.usna.edu, we're going to dive deeper in the ssh application.  Reference the man page for ssh by typing in man ssh and review the output.  Note that you can exit the man page by pressing the Q key on your keyboard.</p>
+    
+
+    <p>Don't hesitate to use man or the help options to get a better grasp on how certain commands work. They will be extremely useful when understanding command syntax, options, and arguments in the future when remotely accessing the Linux system.</p>
+    
+    <h4>Part 3</h4>
+    
+     <p>Interaction across OSs are necessary to get information when using different systems. This is where commands may differ between OSs, specifically Windows and Linux. The following tasks will introduce commands to gather system information off a remotely connected system using the shell. </p>
+
+    <p>Verify the OS by using the command <b>uname -o</b>.  View additional distribution info by using the command <b>lsb_release -a</b> and identify the codename.</p>
+    
+    <p>The <b>whoami</b> command, similar to Windows, will display the username that is currently accessing the console.  System commands in Windows and Linux OS may differ but PowerShell has programmed Linux commands as aliases in Windows!</p>
+    
+    <p>Use <b>lscpu</b> to display the system architecture information (e.g., "Architecture"). 
+    
+    <p>The <b>ps</b> command displays the process status on the system. As a user, there might not be many processes you are currently running considering that you recently connected. Let's take a look by running ps and identifying the number of active processes.</p>
+    
+    <p>Take a look at all active processes running on the server by adding some options to the command. Type <b>ps -ef</b> to see what's taking place.That was a lot of information that blew by. Controlling the output to screen is a technique system administrators have to master. Let's pipe the ps output to more by running the command <b>ps -ef | more</b>.  Note that hitting the space bar will scroll down the information that can fit into the screen but using the enter key will scroll line-by-line.
+    Typing q will quit more so you don't have to scroll through all 700+ lines.</p>
+    
+    <p>Another way to look at system activity is with the top command. You should see plenty of other students logged in and using the system right now!Hint: Use q or Ctrl^C to exit the process.</p>
+
+    <p>The commands used in Linux seem complicated when compared to Windows but its features are very robust when it comes to preferences of system administrators. Additionally, accessing a remote shell reduces the amount of bandwidth when compared to using a Graphical User Interface (GUI) by a significant amount.</p>
+    
+    <h4>Part 4</h4>
+    
+    <p>A handful of commands will allow you to create, modify, move, and delete files off of your system. This task will demonstrate the use of common commands that will enable you to manipulate the file system using the CLI.</p>
+
+    <p>The prompt you are presented with is different than the PowerShell (PS) one displayed in Windows. Let's break down m289999@ward-rweb-09:~$m289999is your username. It matches your alpha.
+    @ is a separator to indicate the server that follows.
+    ward-rweb-09 is the hostname of the remote system.
+    : is another separator
+    ~ is the absolute path to your home directory.
+    $ is the end of the prompt with a cursor that follows waiting for user input.</p>
+    
+    <p>The <b>pwd</b> command prints the absolute path of your current working directory.  Note that ~ is a shortcut to your home directory so you can use the tilde when invoking a directory path.</p>
+    
+    <p>To list the contents of a directory, us the <b>ls</b> command.  The <b>cd</b> command is the same in Linux as it was in Windows.</p>
+    
+    <p>Now change your current working directory using the following command: cd downloads.</p>
+    
+    <p>This command didn't work!  Look at the output of the ls command that you ran earlier, fix your cd command, and try it again.</p>
+    
+    <p>The <b>touch</b> command creates a file. Use this command to create a file named hello.txt.  Verify the file now exists.</p>
+     
+    <p>Use the echo command to add information to the hello.txt file: <b>echo -n Hello > hello.txt</b>. Review help to learn what the -n option does for the echo command.</p>
+    
+    <p>In Linux, cat is used to output the contents of a file to the console. Use the cat command to display the contents of hello.txt to the console.</p>
+    
+    <p>Create a folder named SY110 in your home directory using the mkdir command and referencing the .. relative file path. Recall from Windows that . is your current directory and .. is your parent directory and is the same in Linux.</p>
+    
+    <p>Verify you are still in the Downloads directory. The <b>cp</b> command is used to copy files. Copy the hello.txt file to the SY110 directory that was just created.</p>
+    
+    <p>Change your current working directory to SY110 using cd ../SY110 and verify the hello.txt file exists.If the hello.txt file does not exist in the SY110 directory, review your previous commands to understand the actions executed.</p>
+    
+    <p>The current working directory should be ~/SY110 or /home/mids/m279999/SY110.  Rename the hello.txt file to world.txt using the <b>mv</b> command. Similar to PS in Windows, moving a file to its current directory also renames that file.</p>
+    
+    <p>Verify that the hello.txt file was renamed to world.txt. Once verified, move hello.txt from the Downloads directory to your current working directory.</p>
+    
+    <p>Both hello.txt and world.txt should now be in the ~/SY110 directory. You may list the contents of your current working directory to verify.</p>
+    
+    <p>The greater than symbol '>' sends the console output to a file, overwriting its contents. When using two greater than signs '>>' it will append that file. Use the cat command to view the contents of both the hello.txt file and world.txt file.</p>
+    
+    <p>Previous actions copied the contents of hello.txt to world.txt and they should be the identical.  Use the echo command to overwrite world.txt by entering the following into the console: <b>echo World! > world.txt</b>.  View the contents of world.txt and notice that > overwrote Hello within the file with World!</p>
+    
+    <p>Now append the hello.txt file with the contents of world.txt with the command: <b>cat world.txt >> hello.txt</b>  Output the contents of hello.txt</p>
+    
+    <p>Only delete the world.txt file using the rm command: rm world.txt</p>
+
+    <p>The commands leveraged as part of this task included pwd, ls, cd, touch, echo, cat, mkdir, cp, mv, rm, and rmdir. In addition, we expanded on using > for overwriting contents a file and >> for appending to a file. Using these commands in the CLI will enable you to manipulate the file system in the future when creating, modifying, moving, and removing files or directories within Linux.</p>
+
+    <a href="https://www.ece-labs.net/question.php?guid=abc355de">Complete Linux Checkpoint 1 to finish the lab!</a>
+      
+    </div>
+    
+    <HR>
+    <div id="supplemental_media">
+      <H2>Supplemental Media:</H2>
+      <H4><B>OverTheWire - Bandit</B></H4>
+      <B>Gamification</B>. Learn more about Linux command shells through OverTheWire's <A href="https://overthewire.org/wargames/bandit/" target="_blank">Bandit</A>. USNA's very own <A href="https://www.usna.edu/CST/" target="_blank">Cyber Security Team (CST)</A> utilizes this site to teach new members and gain experience using Linux shells!
+      <BR><BR>
+      <H4><B>Linux - The Origin Story</B></H4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/s7u7jBwIocU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <HR>
+    <div id="references">
+      <H2>References</H2>
+
+      <!--<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;margin-bottom:6.0pt'><span style='line-height:normal;'>Apple. Mar 2022. "Apple unveils M1 Ultra, the world’s most powerful chip for a personal computer.&quot; <i style='mso-bidi-font-style:normal'></i><a href="https://www.apple.com/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/" target="_blank">https://www.apple.com/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/</a><o:p></o:p></span></p>
+
+      <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;margin-bottom:6.0pt'><span style='line-height:normal;'>Keheller, A. Feb 2023. "Moore’s Law – Now and in the Future." <i style='mso-bidi-font-style:normal'>Intel Newsroom. </i><a href="https://www.intel.com/content/www/us/en/newsroom/opinion/moore-law-now-and-in-the-future.html" target="_blank">https://www.intel.com/content/www/us/en/newsroom/opinion/moore-law-now-and-in-the-future.html</a><o:p></o:p></span></p>-->
+      <br><br>
+    </div>
+
+    </div>
+  </BODY>
+</HTML>>
+</div> <!-- /container --></body></html><script id="f5_cspm">(function(){var f5_cspm={f5_p:'DFCIDBEKAHNJBKDFPPMCPMMCIOCNGCEOBGBBHIELAPIEBHKBPCFBHOCMICDHMEPLIMGBNPKLBKDPAJELCLOAHJDIALMOOBNNGNLNKDHAFAGGHACJJEBOGFEADOGPCGOC',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr2054311753aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
