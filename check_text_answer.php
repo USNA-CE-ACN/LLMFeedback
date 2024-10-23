@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		$question_type = $row[0];
 		$feedback = $row[1];
 		// Query to get the correct answer(s) and feedback for the given question ID
-		$sql = "SELECT answer_text FROM Answer WHERE question_id = '$question_id'";
+		$sql = "SELECT answer_text, answer_text_2 FROM Answer WHERE question_id = '$question_id'";
 
 		$result = $db->query($sql);
 	
@@ -61,10 +61,52 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 				}else if($question_type == "contains"){
 					if (str_contains(trim($answer_given), $row['answer_text'])){
 						$isCorrect = true;
+						break;
 					}
 				}else if($question_type == "regex"){
 					if (preg_match($row['answer_text'], trim($answer_given))){
 						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "ngt"){
+					if ((float)$answer_given > (float)$row['answer_text']){
+						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "nge"){
+					if ((float)$answer_given >= (float)$row['answer_text']){
+						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "nlt"){
+					if ((float)$answer_given < (float)$row['answer_text']){
+						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "nle"){
+					if ((float)$answer_given <= (float)$row['answer_text']){
+						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "ne"){
+					$center = (float)$row['answer_text'];
+					$margin = (float)$row['answer_text_2'];
+					$low = $center - $margin;
+					$high = $center + $margin;
+					$ag = (float)$answer_given;
+					if ($ag >= $low && $ag <= $high){
+						$isCorrect = true;
+						break;
+					}
+				}else if($question_type == "nne"){
+					$center = (float)$row['answer_text'];
+					$margin = (float)$row['answer_text_2'];
+					$low = $center - $margin;
+					$high = $center + $margin;
+					$ag = (float)$answer_given;
+					if ($ag <= $low || $ag >= $high){
+						$isCorrect = true;
+						break;
 					}
 				}else{
 					echo "ERROR: Unknown question type!";

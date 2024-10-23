@@ -89,6 +89,31 @@ function checkText(questionId){
     
     xhr.send();
 }
+
+function checkMC(questionId){
+	var answerGiven = document.querySelector('input[name="answer' + questionId + '"]:checked').value;
+	var alpha = document.getElementById('alpha').value;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'check_mc_answer.php?question_id=' + questionId + '&alpha=' + alpha + '&answer_given=' + encodeURIComponent(answerGiven), true);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	
+    document.cookie = "alpha=" + alpha;
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+			response = xhr.responseText;
+			if(response.includes("Correct")){
+				document.getElementById('question_' + questionId).style.background = "#2bf060";
+				document.getElementById('feedback' + questionId).innerHTML = "";
+			}else{
+			    document.getElementById('question_' + questionId).style.background = "#ff776e";
+			    document.getElementById('feedback' + questionId).innerHTML = xhr.responseText;
+			}
+        }
+    };
+    
+    xhr.send();
+}
 </script>
 
 </head>
@@ -155,12 +180,26 @@ function checkText(questionId){
 			echo '<div class="content">';
 			echo '<h3>' . nl2br(stripslashes($q_text)) . '</h3>';
 			
-			if($q_type == "contains"){
-				echo '<input type="text" id="answer' . $q_num . '" name="answer_given" onkeyup="checkAfterTime(' . $q_num . ')">';
-			}else if($q_type == "llm"){
+			if($q_type == "llm"){
 			    echo '<textarea id="answer' . $q_num . '" name="answer_given" rows="5" cols="100"></textarea>';
-				//echo '<input type="text" id="answer' . $q_num . '" name="answer_given">';
 				echo '<input type="button" id="check' . $q_num . '" value="Check Answer" onclick="checkLLM(' . $q_num . ')">';
+			}else if($q_type == "mc"){
+				$sqla = "SELECT answer_text from Answer where question_id = '$q_num'";
+				$resulta = $db->query($sqla);
+				$counta = $resulta->num_rows;
+				
+				echo '<table>';
+				for($j = 0; $j < $counta; $j++){
+					$rowa = $resulta->fetch_row();
+					echo '<tr><td style="padding: 0"><input type="radio" id="answer' . $q_num . '" name="answer' . $q_num . '"';
+					echo 'onclick="checkMC(' . $q_num . ')" value="' . $rowa[0] . '"></td>';
+					echo '<td style="padding-left: 10px">' . $rowa[0] . '</td></tr>';
+				}
+				echo '</table>';
+			}else if($q_type == "ms"){
+				
+			}else{
+				echo '<input type="text" id="answer' . $q_num . '" name="answer_given" onkeyup="checkAfterTime(' . $q_num . ')">';
 			}
 			echo '<div id="feedback' . $q_num . '"></div>';			
 			echo '</div>';

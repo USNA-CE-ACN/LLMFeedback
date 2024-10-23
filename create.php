@@ -131,10 +131,45 @@
             option4.text = 'Multiple Choice';
             questionTypeSelect.appendChild(option4);
 
-            const option5 = document.createElement('option');
-            option5.value = 'llm';
-            option5.text = 'LLM Feedback';
+			const option5 = document.createElement('option');
+            option5.value = 'ms';
+            option5.text = 'Multiple Select';
             questionTypeSelect.appendChild(option5);
+
+            const option6 = document.createElement('option');
+            option6.value = 'llm';
+            option6.text = 'LLM Feedback';
+            questionTypeSelect.appendChild(option6);
+			
+			const option7 = document.createElement('option');
+            option7.value = 'ngt';
+            option7.text = 'Numeric Greater';
+            questionTypeSelect.appendChild(option7);
+
+			const option8 = document.createElement('option');
+            option8.value = 'nge';
+            option8.text = 'Numeric Greater or Equal';
+            questionTypeSelect.appendChild(option8);
+
+			const option9 = document.createElement('option');
+            option9.value = 'nlt';
+            option9.text = 'Numeric Less';
+            questionTypeSelect.appendChild(option9);
+
+			const option10 = document.createElement('option');
+            option10.value = 'nle';
+            option10.text = 'Numeric Less or Equal';
+            questionTypeSelect.appendChild(option10);
+			
+			const option11 = document.createElement('option');
+            option11.value = 'ne';
+            option11.text = 'Numeric Equal';
+            questionTypeSelect.appendChild(option11);
+
+			const option12 = document.createElement('option');
+            option12.value = 'nne';
+            option12.text = 'Numeric Not Equal';
+            questionTypeSelect.appendChild(option12);
 
             section.appendChild(questionTypeSelect);
 
@@ -183,17 +218,6 @@
             feedbackDiv.innerHTML = '';
 
             if (questionType === 'llm') {
-	    /*
-                const primingLabel = document.createElement('label');
-                primingLabel.textContent = ' Priming: ';
-                feedbackDiv.appendChild(primingLabel);
-
-                const primingInput = document.createElement('input');
-                primingInput.type = 'text';
-                primingInput.name = `questions[${questionId}][priming]`;
-                feedbackDiv.appendChild(primingInput);
-		*/
-
                 const thresholdLabel = document.createElement('label');
                 thresholdLabel.textContent = ' Threshold: ';
                 feedbackDiv.appendChild(thresholdLabel);
@@ -207,7 +231,17 @@
                     thresholdSelect.appendChild(option);
                 }
                 feedbackDiv.appendChild(thresholdSelect);
-            }
+            }else if (questionType === 'ne' || questionType === 'nne'){
+				const marginLabel = document.createElement('label');
+                marginLabel.textContent = ' Margin of Error: ';
+                feedbackDiv.appendChild(marginLabel);
+
+				const marginInput = document.createElement('input');
+				marginInput.type = 'text';
+				marginInput.name = `questions[${questionId}][margin]`;
+				marginInput.value = '0';
+                feedbackDiv.appendChild(marginInput);
+			}
         }
 	
         function addAnswer(questionId) {
@@ -217,9 +251,23 @@
             answerDiv.className = 'answer';
             answerDiv.id = `question_${questionId}_answer_${answerCounter}`;
 
+			const answerId = document.createElement('input');
+            answerId.type = 'text';
+            answerId.name = `questions[${questionId}][answer_ids][]`;
+			answerId.value = answerCounter;
+			answerId.style.display = "none";
+            answerDiv.appendChild(answerId);
+
             const answerLabel = document.createElement('label');
             answerLabel.textContent = `Answer ${answerCounter}: `;
             answerDiv.appendChild(answerLabel);
+
+			const answerCorrect = document.createElement('input');
+			answerCorrect.type = 'checkbox';
+			answerCorrect.name = `questions[${questionId}][correct][]`;
+			answerCorrect.checked = true;
+			answerCorrect.value = answerCounter;
+			answerDiv.appendChild(answerCorrect);
 
             const answerInput = document.createElement('input');
             answerInput.type = 'text';
