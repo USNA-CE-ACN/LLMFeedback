@@ -173,14 +173,19 @@
 
             section.appendChild(questionTypeSelect);
 
+	    const wrongDiv = document.createElement('div');
+	    wrongDiv.className = 'wrong';
+	    wrongDiv.id = `wrong_${currentQuestionId}`;
+
             const feedbackLabel = document.createElement('label');
             feedbackLabel.textContent = `Wrong Answer Feedback: `;
-            section.appendChild(feedbackLabel);
+            wrongDiv.appendChild(feedbackLabel);
 
             const questionFeedback = document.createElement('input');
             questionFeedback.type = 'text';
             questionFeedback.name = `questions[${currentQuestionId}][questionFeedback]`;
-            section.appendChild(questionFeedback);
+            wrongDiv.appendChild(questionFeedback);
+    	    section.appendChild(wrongDiv);
 
             const addAnswerButton = document.createElement('button');
             addAnswerButton.type = 'button';
@@ -231,7 +236,14 @@
                     thresholdSelect.appendChild(option);
                 }
                 feedbackDiv.appendChild(thresholdSelect);
-            }else if (questionType === 'ne' || questionType === 'nne'){
+
+		const wrongDiv = document.getElementById(`wrong_${questionId}`);
+		wrongDiv.style.display = "none";
+	    }else{
+				const wrongDiv = document.getElementById(`wrong_${questionId}`);
+		wrongDiv.style.display = "block";
+	}
+            if(questionType === 'ne' || questionType === 'nne'){
 				const marginLabel = document.createElement('label');
                 marginLabel.textContent = ' Margin of Error: ';
                 feedbackDiv.appendChild(marginLabel);
