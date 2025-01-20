@@ -27,32 +27,26 @@ function checkAfterTime(questionId){
 }
 
   function checkLLM(questionId){
-	var answerGiven = document.getElementById('answer' + questionId).value;
-	var alpha = document.getElementById('alpha').value;
+    var answerGiven = document.getElementById('answer' + questionId).value;
+    var alpha = document.getElementById('alpha').value;
     var xhr = new XMLHttpRequest();
 	var params = "question_id=" + questionId + "&alpha=" + alpha + "&answer_given=" + encodeURIComponent(answerGiven);
     xhr.open('POST', 'check_llm_answer.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     
     document.cookie = "alpha=" + alpha;
-    
+
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
 			response = xhr.responseText;
-			
-			var indexOfColon = response.indexOf(":");
-			var rating = response.substring(indexOfColon+2,indexOfColon+4);
 
-			if(rating.includes("/")){
-				rating = rating.substring(0,1);
-			}
+			alert(response);
+
+			var splits = response.split("Feedback")
+			var summary = splits[0].trim();
+			var feedback = splits[1].trim().substring(1);
 			
-			rating = Number(rating);
-			
-			var indexOfFeedback = response.indexOf("Feedback");
-			var feedback = response.substring(indexOfFeedback+10);
-			
-			if(rating >= 5){
+			if(summary.includes("GOOD")){
 				document.getElementById('answer' + questionId).style.background = "#2bf060";
 				document.getElementById('feedback' + questionId).innerHTML = "Good answer!";
 			}else{

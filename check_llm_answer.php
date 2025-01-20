@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alpha = $_POST['alpha'];
     $alpha = $db->real_escape_string($alpha);
 
-    $sql = "SELECT question_text, standard_priming, feedback from Question where question_id = '$question_id'";
+    $sql = "SELECT question_text, standard_priming, feedback, threshold from Question where question_id = '$question_id'";
     $result = $db->query($sql);
 
     if ($result->num_rows > 0){
@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$question_text = $row[0];
 	$standard_priming = $row[1];
 	$feedback = $row[2];
+	$threshold = $row[3];
 	
 	$prompt = "Task: You are a teaching assistant for a freshman-level course.  A student is going to answer this question.  I would like you to rate their answer out of 10 based on the answer that I am expecting and provide feedback to the student on their answer compared to the expected answer.  Do not give the correct answer or directly suggest improvements to the student's answer.  If the student answer is good enough, just tell them that they did a good job.  Format the answer as Rating: X/10 Feedback: ...";
 		
@@ -80,9 +81,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			'model' => 'gpt-4o',
 			'messages' => [['role' => 'user', 'content' => $prompt],],]);
 
-        echo "Here";
+ 		$response = $result->choices[0]->message->content;
+		preg_match('/\d+/', $response, $matches);
+		$rating = $matches[0];
+		$feedback = strstr($response,"Feedback");
 
-		echo $result->choices[0]->message->content;
+		if((int)$rating >= (int)$threshold){
+			echo "GOOD " . $feedback;
+		}else{
+			echo "BAD " . $feedback;
+		}
 	} else {
 		echo "No answer found for the given question ID.";
 	}
