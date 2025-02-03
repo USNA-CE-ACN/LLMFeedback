@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 						break;
 					}
 				}else if($question_type == "regex"){
-					if (preg_match($row['answer_text'], trim($answer_given))){
+					if (preg_match("/" . $row['answer_text'] . "/i", trim($answer_given))){
 						$isCorrect = true;
 						break;
 					}

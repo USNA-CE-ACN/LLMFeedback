@@ -40,8 +40,6 @@ function checkAfterTime(questionId){
         if (xhr.readyState == 4 && xhr.status == 200) {
 			response = xhr.responseText;
 
-			alert(response);
-
 			var splits = response.split("Feedback")
 			var summary = splits[0].trim();
 			var feedback = splits[1].trim().substring(1);
@@ -177,6 +175,7 @@ function checkMC(questionId){
 			if($q_type == "llm"){
 			    echo '<textarea id="answer' . $q_num . '" name="answer_given" rows="5" cols="100"></textarea>';
 				echo '<input type="button" id="check' . $q_num . '" value="Check Answer" onclick="checkLLM(' . $q_num . ')">';
+			    echo '<div id="attempts' . $q_num . '">Attempts: </div>';
 			}else if($q_type == "mc"){
 				$sqla = "SELECT answer_text from Answer where question_id = '$q_num'";
 				$resulta = $db->query($sqla);
