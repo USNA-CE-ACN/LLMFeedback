@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$feedback = $row[2];
 	$threshold = $row[3];
 	
-	$prompt = "Task: You are a teaching assistant for a freshman-level course.  A student is going to answer this question.  I would like you to rate their answer out of 10 based on the answer that I am expecting and provide feedback to the student on their answer compared to the expected answer.  Do not give the correct answer or directly suggest improvements to the student's answer.  If the student answer is good enough, just tell them that they did a good job.  Format the answer as Rating: X/10 Feedback: ...";
+	$prompt = "Task: You are a teaching assistant for a freshman-level course.  A student is going to answer this question.  Rate their answer out of 10 based on the answer that I am expecting and provide feedback to the student on their answer compared to the expected answer.  Do not give the correct answer or directly suggest improvements to the student's answer.  Format the answer as Rating: X/10 Feedback: ...";
 		
 	/*
 	if($standard_priming == 0){
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$sql->close();
 
 		require_once 'vendor/autoload.php';
-		$yourApiKey = "sk-proj-dIFqKtnnIQd8gNujkmAeT3BlbkFJ8MsSIu75BjROrVsmzFPt";
+		$yourApiKey = file_get_contents("lab_api_key.key");
 		$client = OpenAI::client($yourApiKey);
 
 		$result = $client->chat()->create([
