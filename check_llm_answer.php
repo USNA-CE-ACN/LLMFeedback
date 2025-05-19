@@ -21,11 +21,25 @@ if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $question_id = intval($_POST['question_id']);
-    $answer_given = $db->real_escape_string($_POST['answer_given']);
-    $alpha = $_POST['alpha'];
+//if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $question_id = intval($_REQUEST['question_id']);
+    $answer_given = $db->real_escape_string($_REQUEST['answer_given']);
+
+    if(!isset($_REQUEST['alpha'])){
+      echo "BAD Feedback: Enter your alpha.";
+      goto done;
+    }
+
+    $alpha = $_REQUEST['alpha'];
     $alpha = $db->real_escape_string($alpha);
+
+    $sql = "SELECT course_id from students where alpha = '$alpha'";
+    $result = $db->query($sql);
+
+    if ($result->num_rows == 0){
+      echo "BAD Feedback: Alpha not found for this course. Please check your alpha or notify your instructor.";
+      goto done;
+    }
 
     $sql = "SELECT question_text, standard_priming, feedback, threshold from Question where question_id = '$question_id'";
     $result = $db->query($sql);
@@ -97,7 +111,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }else{
 	echo "ERROR: No question found!";
     }
-}
+//}
 
+done:
 $db->close();
 ?>

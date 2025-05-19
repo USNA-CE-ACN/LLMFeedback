@@ -26,14 +26,20 @@ function checkAfterTime(questionId){
 	typingTimer = setTimeout(checkText, doneTypingInterval, questionId);
 }
 
-  function checkLLM(questionId){
+function checkLLM(questionId){
     var answerGiven = document.getElementById('answer' + questionId).value;
     var alpha = document.getElementById('alpha').value;
     var xhr = new XMLHttpRequest();
 	var params = "question_id=" + questionId + "&alpha=" + alpha + "&answer_given=" + encodeURIComponent(answerGiven);
     xhr.open('POST', 'check_llm_answer.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    
+
+    if(alpha == null || alpha == ""){
+    	document.getElementById('answer' + questionId).style.background = "#ff776e";
+	document.getElementById('feedback' + questionId).innerHTML = "Enter your alpha.";
+	return;
+    }
+
     document.cookie = "alpha=" + alpha;
 
     xhr.onreadystatechange = function() {
@@ -51,19 +57,25 @@ function checkAfterTime(questionId){
 				document.getElementById('answer' + questionId).style.background = "#ff776e";
 				document.getElementById('feedback' + questionId).innerHTML = feedback;
 			}
-        }
-    };
+      }
+   };
     
-    xhr.send(params);
+   xhr.send(params);
 }
 
 function checkText(questionId){
-	var answerGiven = document.getElementById('answer' + questionId).value;
-	var alpha = document.getElementById('alpha').value;
+    var answerGiven = document.getElementById('answer' + questionId).value;
+    var alpha = document.getElementById('alpha').value;
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'check_text_answer.php?question_id=' + questionId + '&alpha=' + alpha + '&answer_given=' + encodeURIComponent(answerGiven), true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    
+
+    if(alpha == null || alpha == ""){
+    	document.getElementById('answer' + questionId).style.background = "#ff776e";
+	document.getElementById('feedback' + questionId).innerHTML = "Enter your alpha.";
+	return;
+    }
+
     document.cookie = "alpha=" + alpha;
     
     xhr.onreadystatechange = function() {

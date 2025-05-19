@@ -16,9 +16,23 @@ if ($db->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $question_id = intval($_GET['question_id']);
     $answer_given = $db->real_escape_string($_GET['answer_given']);
+
+    if(!isset($_GET['alpha'])){
+      echo "Enter your alpha.";
+      goto done;
+    }
+
     $alpha = $_GET['alpha'];
     $alpha = $db->real_escape_string($alpha);
-    
+
+    $sql = "SELECT course_id from students where alpha = '$alpha'";
+    $result = $db->query($sql);
+
+    if ($result->num_rows == 0){
+      echo "Alpha not found for this course. Please check your alpha or notify your instructor.";
+      goto done;
+    }
+
 	$sql = "SELECT attempt_id from Attempt where alpha = '$alpha' AND question_id = '$question_id'";
 	$result = $db->query($sql);
 	
@@ -126,5 +140,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 	}
 }
 
+done:
 $db->close();
 ?>
