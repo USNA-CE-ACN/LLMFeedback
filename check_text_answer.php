@@ -130,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 			if ($isCorrect) {
 				echo "Correct!";
 			} else {
-				echo $feedback;
+				echo stripslashes(str_replace('\n','',$feedback));
 			}
 		} else {
 			echo "No answer found for the given question ID.";
