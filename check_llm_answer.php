@@ -88,6 +88,16 @@ if ($db->connect_error) {
 		$sql->close();
 
 		require_once 'vendor/autoload.php';
+		$client = \ArdaGnsrn\Ollama\Ollama::client();
+		
+		$completions = $client->completions()->create([
+			'model' => 'gemma3',
+			'prompt' => $prompt,
+		]);
+
+		$response = $completions->response;
+
+	/*
 		$yourApiKey = file_get_contents("lab_api_key.key");
 		$client = OpenAI::client($yourApiKey);
 
@@ -96,6 +106,7 @@ if ($db->connect_error) {
 			'messages' => [['role' => 'user', 'content' => $prompt],],]);
 
  		$response = $result->choices[0]->message->content;
+		*/
 		preg_match('/\d+/', $response, $matches);
 		$rating = $matches[0];
 		$feedback = strstr($response,"Feedback");
