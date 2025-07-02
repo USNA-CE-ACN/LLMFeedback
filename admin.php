@@ -126,6 +126,24 @@ function saveEnrollment(){
     xhr.send(url);
 	document.getElementById("students").value = "Processing...";
 }
+	
+function loadQuestion(){
+	document.getElementById("question").innerHTML = "";
+	var assignmentId = document.getElementById('checkpoint').value;
+		
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', 'load_checkpoints.php?checkpoint=' + assignmentId, true);
+	xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			response = xhr.responseText;
+			document.getElementById("question").innerHTML = response;
+		}
+	};
+		
+	xhr.send();
+}
 </script>
 
 <body class="is-preload">
