@@ -3,11 +3,7 @@ include('session.php');
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
-// ✅ Initialize database connection
-$db = new mysqli("localhost", "smkkyxmy_llm", "llmFEEDB@CK2024", "smkkyxmy_llmfeedback"); // Change credentials as needed
-if ($db->connect_error) {
-    die("Connection failed: " . $db->connect_error);
-}
+include_once('config.php');
 
 $guid = $db->real_escape_string($_GET["guid"]);
 $sql = "SELECT * FROM Checkpoint WHERE guid = '$guid'";
