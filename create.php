@@ -33,6 +33,7 @@ if ($checkpoint_id > 0) {
         $ansRes = $ansStmt->get_result();
         $q['answers'] = $ansRes->fetch_all(MYSQLI_ASSOC);
         $ansStmt->close();
+		$q['question_text'] = nl2br(stripslashes($q['question_text']));
         $questions[] = $q;
     }
     $stmt->close();
