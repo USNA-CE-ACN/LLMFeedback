@@ -115,6 +115,7 @@ function addQuestionFromData(data) {
   const questionInput = document.createElement('input');
   questionInput.type = 'text';
   questionInput.name = `questions[${currentQuestionId}][question]`;
+  questionInput.id = `questions[${currentQuestionId}][question]`;
   questionInput.value = data.question_text;
   section.appendChild(questionInput);
 
@@ -308,6 +309,22 @@ function handleQuestionTypeChange(questionId, questionType) {
       thresholdSelect.appendChild(option);
     }
     feedbackDiv.appendChild(thresholdSelect);
+	const thresholdHelpButton = document.createElement('button');
+	thresholdHelpButton.type = 'button';
+	thresholdHelpButton.textContent = 'Suggest Answers to Choose Threshold';
+	thresholdHelpButton.onclick = function () {
+		suggestThresholds(questionId);
+	};
+	feedbackDiv.appendChild(thresholdHelpButton);
+	
+	const thresholdHideButton = document.createElement('button');
+	thresholdHideButton.type = 'button';
+	thresholdHideButton.textContent = 'Hide Suggestions';
+	thresholdHideButton.onclick = function () {
+		hideSuggestThresholds(questionId);
+	};
+	feedbackDiv.appendChild(thresholdHideButton);
+	
     wrongDiv.style.display = 'none';
   } else {
     wrongDiv.style.display = 'block';
@@ -324,6 +341,47 @@ function handleQuestionTypeChange(questionId, questionType) {
     marginInput.value = '0';
     feedbackDiv.appendChild(marginInput);
   }
+}
+
+function hideSuggestThresholds(questionId){
+	const question_div = document.querySelector('#question_' + questionId + ' #main');
+	var suggest_div = document.getElementById(`question_${questionId}_suggest`);
+	
+	if(suggest_div != null){
+		suggest_div.style = "display: none;";
+	}
+}
+
+function suggestThresholds(questionId){
+	const question_div = document.querySelector('#question_' + questionId + ' #main');
+	const question_text = document.getElementById(`questions[${questionId}][question]`).value;
+	const selector = '[name="questions[' + questionId + '][answers][]"]';
+	const answer_div = $(selector);
+	const answer_text = answer_div.val();
+	
+	var suggest_div = document.getElementById(`question_${questionId}_suggest`);
+	
+	if(suggest_div == null){
+		suggest_div = document.createElement('textarea');
+		suggest_div.id = `question_${questionId}_suggest`;
+		suggest_div.cols = "60";
+		suggest_div.rows = "30";
+		question_div.appendChild(suggest_div);
+		
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'get_threshold_suggestions.php?question_text=' + encodeURIComponent(question_text) + '&answer_text=' + encodeURIComponent(answer_text), true);
+		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				response = xhr.responseText;
+				suggest_div.value = response;
+			}
+		};
+    
+		xhr.send();
+	}else{
+		suggest_div.style = "display: inline;";
+	}
 }
 
 function removeQuestion(questionId) {

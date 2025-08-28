@@ -11,30 +11,29 @@ use OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotation
 use OpenAI\Testing\Responses\Concerns\Fakeable;
 
 /**
- * @implements ResponseContract<array{value: string, annotations: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}>
+ * @implements ResponseContract<array{value: ?string, annotations: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote?: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}>
  */
 final class ThreadMessageDeltaResponseContentText implements ResponseContract
 {
     /**
-     * @use ArrayAccessible<array{value: string, annotations: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}>
+     * @use ArrayAccessible<array{value: ?string, annotations: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote?: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}>
      */
     use ArrayAccessible;
 
     use Fakeable;
 
     /**
-     * @param  array<int, ThreadMessageResponseContentTextAnnotationFilePathObject|ThreadMessageResponseContentTextAnnotationFileCitationObject>  $annotations
+     * @param  \OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFilePathObject[]|\OpenAI\Responses\Threads\Messages\ThreadMessageResponseContentTextAnnotationFileCitationObject[]  $annotations
      */
     private function __construct(
-        public string $value,
+        public ?string $value,
         public array $annotations,
-    ) {
-    }
+    ) {}
 
     /**
      * Acts as static factory, and returns a new Response instance.
      *
-     * @param  array{value: string, annotations?: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}  $attributes
+     * @param  array{value?: string, annotations?: array<int, array{type: 'file_citation', text: string, file_citation: array{file_id: string, quote?: string}, start_index: int, end_index: int}|array{type: 'file_path', text: string, file_path: array{file_id: string}, start_index: int, end_index: int}>}  $attributes
      */
     public static function from(array $attributes): self
     {
@@ -47,7 +46,7 @@ final class ThreadMessageDeltaResponseContentText implements ResponseContract
         );
 
         return new self(
-            $attributes['value'],
+            $attributes['value'] ?? null,
             $annotations,
         );
     }

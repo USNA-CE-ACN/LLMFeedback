@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f
+class ComposerStaticInit8c673bcf9afe69530c805fc828ba92f9
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -33,6 +33,10 @@ class ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+        ),
+        'A' => 
+        array (
+            'ArdaGnsrn\\Ollama\\' => 17,
         ),
     );
 
@@ -70,6 +74,10 @@ class ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'ArdaGnsrn\\Ollama\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ardagnsrn/ollama-php/src',
+        ),
     );
 
     public static $classMap = array (
@@ -79,9 +87,9 @@ class ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit150000716fb3a1739eaf9bf6a941d41f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit8c673bcf9afe69530c805fc828ba92f9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit8c673bcf9afe69530c805fc828ba92f9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit8c673bcf9afe69530c805fc828ba92f9::$classMap;
 
         }, null, ClassLoader::class);
     }
