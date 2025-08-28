@@ -132,10 +132,25 @@ function addQuestionFromData(data) {
   };
 
   const types = ['exact', 'contains', 'regex', 'mc', 'ms', 'llm', 'ngt', 'nge', 'nlt', 'nle', 'ne', 'nne'];
+  
+  const typeToText = new Map();
+  typeToText.set('exact','Text Exact Match');
+  typeToText.set('contains','Text Contains');
+  typeToText.set('regex','Text Regex');
+  typeToText.set('mc','Multiple Choice');
+  typeToText.set('ms','Multiple Select');
+  typeToText.set('llm','LLM Feedback');
+  typeToText.set('ngt','Numeric Greater');
+  typeToText.set('nge','Numeric Greater or Equal');
+  typeToText.set('nlt','Numeric Less');
+  typeToText.set('nle','Numeric Less or Equal');
+  typeToText.set('ne','Numeric Equal');
+  typeToText.set('nne','Numeric Not Equal');
+  
   for (const t of types) {
     const option = document.createElement('option');
     option.value = t;
-    option.text = t.toUpperCase();
+    option.text = typeToText.get(t);
     if (t === data.question_type) option.selected = true;
     questionTypeSelect.appendChild(option);
   }
